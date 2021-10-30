@@ -1,0 +1,9 @@
+.tour-section{
+    text-align: justify;
+    font-family: "Ubuntu",sans-serif;
+    background-color: #F4F5F7;
+}
+.tour-section i{
+    color: orange;
+    margin-right: 10px;
+}
