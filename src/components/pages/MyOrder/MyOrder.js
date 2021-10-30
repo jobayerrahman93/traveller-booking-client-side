@@ -11,7 +11,7 @@ const MyOrder = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/myOrder")
+        fetch("https://morning-shore-41934.herokuapp.com/myOrder")
             .then(res => res.json())
             .then(data => {
               
@@ -31,7 +31,7 @@ const MyOrder = () => {
     // delete my order
     const deleteMyOrder=(id)=>{
         console.log(id);
-        fetch(`http://localhost:5000/myOrder/${id}`,{
+        fetch(`https://morning-shore-41934.herokuapp.com/myOrder/${id}`,{
             method:"DELETE",
         })
         .then(res=>res.json())

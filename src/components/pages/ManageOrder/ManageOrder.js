@@ -12,7 +12,7 @@ const ManageOrder = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/manageOrder")
+        fetch("https://morning-shore-41934.herokuapp.com/manageOrder")
             .then(res => res.json())
             .then(data => setManageOrder(data))
     }, [approveModifiedCount]);
@@ -22,7 +22,7 @@ const ManageOrder = () => {
     // handle delete
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/manageOrder/${id}`, {
+        fetch(`https://morning-shore-41934.herokuapp.com/manageOrder/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())
@@ -47,7 +47,7 @@ const ManageOrder = () => {
     const handleUpdateStatus = (id) => {
 
         console.log(id);
-        fetch(`http://localhost:5000/manageOrder/${id}`, {
+        fetch(`https://morning-shore-41934.herokuapp.com/manageOrder/${id}`, {
             method: "PUT",
             headers:{
                 'content-type':'application/json'

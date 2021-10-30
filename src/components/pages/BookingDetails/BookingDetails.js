@@ -14,7 +14,7 @@ const BookingDetails = () => {
     // single serivces
     useEffect(() => {
 
-        fetch(`http://localhost:5000/bookingDetails/${Bookid}`)
+        fetch(`https://morning-shore-41934.herokuapp.com/bookingDetails/${Bookid}`)
             .then(res => res.json())
             .then(data => setSingleService(data));
     }, []);
@@ -36,7 +36,7 @@ const BookingDetails = () => {
 
         const orderDetails={orderName:singleService.name,name,email,address,status:"pending"};
        
-        fetch("http://localhost:5000/bookingDetails/order",{
+        fetch("https://morning-shore-41934.herokuapp.com/bookingDetails/order",{
             method:"POST",
             headers:{
                 "content-type":"application/json"
