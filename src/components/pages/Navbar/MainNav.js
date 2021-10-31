@@ -21,9 +21,9 @@ const MainNav = () => {
                             <li className="nav-item">
                                 <Link to="/">Home</Link>
                             </li>
-                            <li className="nav-item">
+                            {user.email &&<li className="nav-item">
                                 <Link to="/addBooking" >Add Booking Service</Link>
-                            </li>
+                            </li>}
                             <li className="nav-item">
                                 <Link to="/tour" >Tours</Link>
                             </li>
