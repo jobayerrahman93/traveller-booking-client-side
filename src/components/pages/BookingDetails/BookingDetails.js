@@ -5,7 +5,7 @@ import './BookingDetails.css';
 
 const BookingDetails = () => {
     const { Bookid } = useParams();
-    console.log(Bookid);
+    // console.log(Bookid);
 
     const {user}=useAuth();
 
@@ -47,7 +47,7 @@ const BookingDetails = () => {
         .then(data=>{
             if(data.insertedId){
                 alert("Successfully placed order")
-                console.log(data);
+                // console.log(data);
             }
         })
 

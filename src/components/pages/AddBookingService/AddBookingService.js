@@ -30,7 +30,7 @@ const AddBookingService = () => {
             .then(data => {
                 if (data.insertedId) {
                     alert("succefully inserted");
-                    console.log(data);
+                    // console.log(data);
 
                 }
             })

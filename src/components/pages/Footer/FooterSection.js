@@ -33,7 +33,7 @@ const FooterSection = () => {
 
                         <div>
                             <h3>Newsletter</h3>
-                            <div className="input-group mb-3 w-50 mx-auto">
+                            <div className="input-group mb-3 w-50">
                             <input type="text" className="form-control" placeholder="" aria-label="" aria-describedby="button-addon2"/>
                             <button className="btn btn-primary" type ="button" id="button-addon2">Submit</button>
                         </div>
