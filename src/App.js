@@ -24,9 +24,9 @@ function App() {
             <Route exact path="/">
               <Home></Home>
             </Route>
-            <Route path="/addBooking">
+            <PrivateRoute path="/addBooking">
               <AddBookingService></AddBookingService>
-            </Route>
+            </PrivateRoute>
             <Route path="/contact">
               <Contact></Contact>
             </Route>
