@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './BookingDetails.css';
 

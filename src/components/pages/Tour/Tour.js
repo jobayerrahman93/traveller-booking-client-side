@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './Tour.css';
 const Tour = () => {
     return (
-        <div className="vh-100 text-center">
-            <h1 className="my-5">This page is under development</h1>
+        <div className="vh-100 text-center tour">
+           
         </div>
     );
 };
