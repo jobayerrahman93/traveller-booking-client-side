@@ -35,6 +35,7 @@ const Login = () => {
         <div className="login-page">
             <div className="container">
                 <form className="w-50 mx-auto mt-5">
+                    <marquee>Please login with google sign in because register/login section still under development </marquee>
                     <div className="mb-3">
                         <h3 className="mb-5">Create account</h3>
                         
