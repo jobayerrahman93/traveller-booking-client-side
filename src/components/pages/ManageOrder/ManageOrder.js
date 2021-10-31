@@ -21,7 +21,10 @@ const ManageOrder = () => {
     // handle delete
 
     const handleDelete = (id) => {
-        fetch(`https://morning-shore-41934.herokuapp.com/manageOrder/${id}`, {
+        
+        const dltConfirm=window.confirm('are you sure want to delete this item ?');
+        if(dltConfirm){
+            fetch(`https://morning-shore-41934.herokuapp.com/manageOrder/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())
@@ -33,6 +36,7 @@ const ManageOrder = () => {
 
                 }
             })
+        }
 
     }
 

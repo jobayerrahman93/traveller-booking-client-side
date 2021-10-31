@@ -1,6 +1,6 @@
 # Traveller Booking
 
-Traveller booking [Live link ](https://traveller-booking.web.app/).
+Traveller booking [Live link ](https://traveller-booking.web.app/)
 
 ## Available Services
 

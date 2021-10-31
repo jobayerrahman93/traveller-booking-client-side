@@ -30,7 +30,10 @@ const MyOrder = () => {
 
     // delete my order
     const deleteMyOrder=(id)=>{
-        console.log(id);
+        // console.log(id);
+       const dltConfirm=window.confirm('are you sure want to delete this item ?')
+
+       if(dltConfirm){
         fetch(`https://morning-shore-41934.herokuapp.com/myOrder/${id}`,{
             method:"DELETE",
         })
@@ -42,6 +45,7 @@ const MyOrder = () => {
                 setMyAllOrder(remaining);
             }
         })
+       }
     }
 
     return (
